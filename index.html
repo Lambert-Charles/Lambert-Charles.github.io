@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>IT Engineer</title>
+  <title>Skilled Backend Dev</title>
   <meta name="viewport" content="width=device-width">
   <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
   <meta name="keywords" content="java, backend, developper" />
@@ -60,10 +60,13 @@
           <a href="#skills">Skills</a>
         </li>
         <li class="page-scroll">
-          <a href="#about">Career</a>
+          <a href="#degrees">Degrees</a>
         </li>
         <li class="page-scroll">
           <a href="#portfolio">Portfolio</a>
+        </li>
+        <li class="page-scroll">
+          <a href="#Experience">Experience</a>
         </li>
         <li class="page-scroll">
           <a href="#contact">Contact</a>
@@ -75,12 +78,12 @@
   <!-- /.container-fluid -->
 </nav>
 
-  <!-- Header -->
+<!-- Header -->
 <header>
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
-        <img class="img-responsive" src="img/profile.png" alt="profile-pic" />
+        <img class="img-responsive profile-img" src="img/profile.png" alt="profile-pic" />
         <div class="intro-text">
           <span class="name">Charles Lambert</span>
           <hr class="star-light" />
@@ -92,43 +95,102 @@
 </header>
 
   <!-- Skills Section -->
-  <section class="success" id="about">
+  <section class="skills" id="skills">
     <div class="container">
-      <div class="row">
+      <div class="row text-align-center">
         <div class="col-lg-12 text-center">
-          <h2>Skills</h2>
-          <hr class="star-light">
+          <h2 class="name">Skills</h2>
+          <hr class="star-primary">
         </div>
       </div>
-      <div class="row">
-        <div class="col-lg-4 col-lg-offset-2">
-          <p class="skills">Java</p>
-          <p class="skills">JavaScript</p>
-          <p class="skills">Java</p>
+
+      <div class="skills">
+        <div class="skills-subgroup"><!--IT skills-->
+          <div class="single-skill">
+              <p class="skill-name">Java</p>
+              <p class="skill-points">&#9632; &#9632; &#9632; &#9632; &#9632;</p>
+          </div>
+          <div class="single-skill">
+            <p class="skill-name">Javascript, html/css</p>
+            <p class="skill-points">&#9632; &#9632; &#9632; &#9633; &#9633;</p>
+          </div>
+          <div class="single-skill">
+            <p class="skill-name">System Admin</p>
+            <p class="skill-points">&#9632; &#9632; &#9632; &#9632; &#9632;</p>
+          </div>
         </div>
-        <div class="col-lg-4">
-          <p class="skills">English</p>
-          <p class="skills">Spanish</p>
-          <p class="skills">French</p>
+
+        <div class="skills-subgroup"><!--language skills-->
+          <div class="single-skill">
+            <p class="skill-name">English</p>
+            <p class="skill-points">&#9632; &#9632; &#9632; &#9632; &#9633;</p>
+          </div>
+          <div class="single-skill">
+            <p class="skill-name">Spanish</p>
+            <p class="skill-points">&#9632; &#9632; &#9632; &#9632; &#9632;</p>
+          </div>
+          <div class="single-skill">
+            <p class="skill-name">French</p>
+            <p class="skill-points">&#9632; &#9632; &#9632; &#9632; &#9632;</p>
+          </div>
         </div>
-        <div class="col-lg-8 col-lg-offset-2 text-center">
-          <a href="https://github.com/jeromelachaud/freelancer-theme" class="btn btn-lg btn-outline">
-            <i class="fa fa-download"></i> Download Theme
-          </a>
-        </div>
+      </div>
+
+      <div class="tools">
+        <p class="skills">&#129520; Tools: Maven, git, Junit</p>
       </div>
     </div>
   </section>
-  <!-- Portfolio Grid Section -->
+
+
+<!-- Degrees & certifications Section -->
+<section class="success degrees" id="degrees">
+  <div class="container">
+    <div class="row text-align-center">
+      <div class="col-lg-12 text-center">
+        <h2 class="name">Degrees and certifications</h2> 
+        <hr class="star-light">
+      </div>
+    </div>
+
+    <div class="row degrees">
+        <div class="single-skill">
+          <div class="text-center half-width">
+            <img class ="inline" src="img/JAVA-oca.png" alt="Oracle Java SE 8 Programmer I">
+            <p class="bigger">Java SE 8 Programmer I</p>
+          </div>
+          <div class="text-center half-width">
+            <img class ="inline " src="img/FirstCertificate.png" alt="First certificate">
+            <p class="bigger">First certificate <br> Grade <strong>A</strong></p>
+          </div>
+        </div>
+
+        <div class="single-skill">
+          <div class="text-center half-width">
+            <img class ="inline" src="img/isen.png" alt="ISEN IT engineer degree">
+            <p class="bigger">IT engineer degree</p>
+          </div>
+          <div class="text-center half-width">
+            <img class ="inline" src="img/sysadmin.png" alt="Solaris System Administrator I">
+            <p class="bigger">Solaris Sysadmin I <br> Certification</p>
+          </div>
+        </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Portfolio Grid Section -->
 <section id="portfolio">
   <div class="container portfolio-flex-grid">
-    <div class="row">
+    <div class="row text-align-center">
       <div class="col-lg-12 text-center">
-        <h2>Portfolio</h2>
+        <h2 class="name">Portfolio</h2>
         <hr class="star-primary">
       </div>
     </div>
-    <div class="portfolio-flex-row">
+    <div class="portfolio-flex-row" style="margin-top: 40px;">
       
       <div class="portfolio-flex-item portfolio-item">
         <a href="#portfolioModal-1" class="portfolio-link" data-toggle="modal">
@@ -137,7 +199,7 @@
               <i class="fa fa-search-plus fa-3x"></i>
             </div>
           </div>
-          <img src="img/portfolio/cabin.png" class="img-responsive" alt="image-alt">
+          <img src="img/portfolio/pacman.png" class="img-responsive" alt="Pacman logo">
         </a>
       </div>
       
@@ -148,7 +210,7 @@
               <i class="fa fa-search-plus fa-3x"></i>
             </div>
           </div>
-          <img src="img/portfolio/cake.png" class="img-responsive" alt="image-alt">
+          <img src="img/portfolio/greenbank.png" class="img-responsive" alt="Greenbank app logo">
         </a>
       </div>
       
@@ -159,89 +221,205 @@
               <i class="fa fa-search-plus fa-3x"></i>
             </div>
           </div>
-          <img src="img/portfolio/circus.png" class="img-responsive" alt="image-alt">
-        </a>
-      </div>
-      
-      <div class="portfolio-flex-item portfolio-item">
-        <a href="#portfolioModal-4" class="portfolio-link" data-toggle="modal">
-          <div class="caption">
-            <div class="caption-content">
-              <i class="fa fa-search-plus fa-3x"></i>
-            </div>
-          </div>
-          <img src="img/portfolio/game.png" class="img-responsive" alt="image-alt">
-        </a>
-      </div>
-      
-      <div class="portfolio-flex-item portfolio-item">
-        <a href="#portfolioModal-6" class="portfolio-link" data-toggle="modal">
-          <div class="caption">
-            <div class="caption-content">
-              <i class="fa fa-search-plus fa-3x"></i>
-            </div>
-          </div>
-          <img src="img/portfolio/submarine.png" class="img-responsive" alt="image-alt">
-        </a>
-      </div>
-      
-      <div class="portfolio-flex-item portfolio-item">
-        <a href="#portfolioModal-5" class="portfolio-link" data-toggle="modal">
-          <div class="caption">
-            <div class="caption-content">
-              <i class="fa fa-search-plus fa-3x"></i>
-            </div>
-          </div>
-          <img src="img/portfolio/safe.png" class="img-responsive" alt="image-alt">
-        </a>
-      </div>
-      
-    </div>
-  </div>
-</section>
-
-  <!-- About Section -->
-<section class="success" id="about">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h2>About</h2>
-        <hr class="star-light">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-4 col-lg-offset-2">
-        <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete
-          source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy
-          customization.</p>
-      </div>
-      <div class="col-lg-4">
-        <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or
-          a graphic artist looking to share your projects, this template is the perfect starting point! </p>
-      </div>
-      <div class="col-lg-8 col-lg-offset-2 text-center">
-        <a href="https://github.com/jeromelachaud/freelancer-theme" class="btn btn-lg btn-outline">
-          <i class="fa fa-download"></i> Download Theme
+          <img src="img/portfolio/md5.png" class="img-responsive" alt="Md5 hash algorithm">
         </a>
       </div>
     </div>
   </div>
 </section>
 
+    <!-- Experience Section -->
+    <section class="success" id="Experience">
+      <div class="container">
+        <div class="row text-align-center">
+          <div class="col-lg-12 text-center">
+            <h2 class="name">Experience</h2>
+            <hr class="star-light">
+          </div>
+        </div>
 
+        
+
+        <div class="panel-group" id="accordion">
+         
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-4 experience-date">Aug 2017 - TODAY</div>
+              <div class="col-xs-8 experience-date text-align-right">Lycée français international de Tenerife</div>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                  Linux system administrator
+                </a>
+              </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in">
+              <div class="panel-body color-black">
+                <ul class="experience-ul">
+                  <li class="experience-li"><strong>System administration and hardware maintenance:</strong></li>
+                  
+                    <ul class="experience-ul">
+                      <li class="experience-sub-li">users workstations (mostly <strong>Linux</strong>) </li>
+                      <li class="experience-sub-li"><strong>network admninistration</strong> (switchs, routers, firewall, proxy)</li>
+                      <li class="experience-sub-li">servers (<strong>backup, samba</strong>...)</li>
+                    </ul>
+                   
+                  <li class="experience-li">Network renovation (design and implementation of a new architecture)</li>                  
+                  <li class="experience-li">Design and maintenance of <a href="https://liceofrancestenerife.es" target="_blank"><strong>school's website</strong></a></li>
+                </ul>  
+              </div>
+            </div>
+          </div>
+
+
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-4 experience-date">Aug 2013 - Aug 2017</div>
+              <div class="col-xs-8 experience-date text-align-right">SCI les 4 chemins - <em>Southern France</em></div>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                  Student residence manager
+                </a>
+              </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse">
+              <div class="panel-body color-black">
+                <ul class="experience-ul">
+                  <li class="experience-li">University residence manager (50 apartments)</li>
+                  
+                  <ul class="experience-ul">
+                    <li class="experience-sub-li">Administrative management: general information, contract processing, account control</li>
+                    <li class="experience-sub-li">General maintenance and incident resolution</li>
+                  </ul>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-4 experience-date">Dec 2010 - Nov 2012</div>
+              <div class="col-xs-8 experience-date text-align-right">La Rocamora - <em>Southern Spain</em></div>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                  Business owner
+                </a>
+              </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse">
+              <div class="panel-body color-black">
+                <ul class="experience-ul">
+                  <li class="experience-li">Creator and manager of restaurant <em>La Rocamora</em></li>
+                  
+                  <ul class="experience-ul">
+                    <li class="experience-sub-li">Design and realization of the project</li>
+                    <li class="experience-sub-li">Administration and management of the company</li>
+                  </ul>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-4 experience-date">Oct 2009 - Oct 2010</div>
+            <div class="col-xs-8 experience-date"></div>
+          </div>
+        </div>
+
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                Full time traveller
+              </a>
+            </h4>
+          </div>
+          <div id="collapseFour" class="panel-collapse collapse">
+            <div class="panel-body color-black experience-li">
+              Backpacking through <strong>Southeast Asia, South America</strong> and Spain's <strong>Andalucia</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-4 experience-date">June 2006 - Sept 2009</div>
+            <div class="col-xs-8 experience-date text-align-right">Devoteam - <em>Madrid</em></div>
+          </div>
+        </div>
+
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+                Unix System Administrator
+              </a>
+            </h4>
+          </div>
+          <div id="collapseFive" class="panel-collapse collapse">
+            <div class="panel-body color-black experience-li">
+              <strong>HP-UX & Solaris</strong> System administrator for <em>Telefónica Móviles</em>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row" sytle="border: solid 1px green;">
+            <div class="col-xs-4 experience-date">Mar 2005 - June 2006</div>
+            <div class="col-xs-8 experience-date text-align-right">CapGemini - <em>Madrid</em></div>
+          </div>
+        </div>
+
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
+                Customer Support for Sun Microsystem
+              </a>
+            </h4>
+          </div>
+          <div id="collapseSix" class="panel-collapse collapse">
+            <div class="panel-body color-black experience-li">
+              Software and hardware customer support for <strong><em>SUN Microsystems</em></strong>            
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    </section>
   
   <!-- Contact Section -->
 <section id="contact">
   <div class="container">
-    <div class="row">
+    <div class="row text-align-center">
       <div class="col-lg-12 text-center">
-        <h2>Contact Me</h2>
+        <h2 class="name">Contact Me</h2>
         <hr class="star-primary">
       </div>
     </div>
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2">
-        <form action="//formspree.io/your-email@domain.com" method="POST" name="sentMessage" id="contactForm" novalidate>
+        <form action="https://formspree.io/f/mdoqqzbo" method="POST" name="sentMessage" id="contactForm" novalidate>
           <div class="row control-group">
             <div class="form-group col-xs-12 floating-label-form-group controls">
               <label for="name">Name</label>
@@ -301,39 +479,19 @@
           </p>
         </div>
         <div class="footer-col col-md-4">
-          <h3>Around the Web</h3>
+          <h3>Repositories</h3>
           <ul class="list-inline">
-            
+       
             <li>
-              <a href="http://twitter.com/jekyllrb" class="btn-social btn-outline"><i
-                  class="fa-brands fa-fw fa-twitter"></i></a>
-            </li>
-            
-            <li>
-              <a href="" class="btn-social btn-outline"><i
-                  class="fa-brands fa-fw fa-facebook"></i></a>
-            </li>
-            
-            <li>
-              <a href="http://stackoverflow.com/questions/tagged/jekyll" class="btn-social btn-outline"><i
-                  class="fa-brands fa-fw fa-stack-overflow"></i></a>
-            </li>
-            
-            <li>
-              <a href="http://bitbucket.org/jekyll" class="btn-social btn-outline"><i
-                  class="fa-brands fa-fw fa-bitbucket"></i></a>
-            </li>
-            
-            <li>
-              <a href="http://github.com/jekyll" class="btn-social btn-outline"><i
+              <a href="https://github.com/Lambert-Charles" target="_blank" class="btn-social btn-outline"><i
                   class="fa-brands fa-fw fa-github"></i></a>
             </li>
             
           </ul>
         </div>
         <div class="footer-col col-md-4">
-          <h3>Credits</h3>
-          <p>Freelancer is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
+          <h3>About me</h3>
+          <p class="small">I'm a <strong>French</strong> IT engineer, father of 2. I've been living in different parts of <strong>Spain</strong> for the last 20 years. Oh, and in my spare time I play guitar and sing in a rock band. &#129304;</p>
         </div>
       </div>
     </div>
@@ -371,27 +529,55 @@
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
           <div class="modal-body">
-            <h2>Project 1</h2>
+            <h2 class="name">Pacman videogame</h2>
             <hr class="star-primary">
-            <img src="img/portfolio/cabin.png" class="img-responsive img-centered" alt="image-alt">
-            
-            <p>Use this area of the page to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+
+
+            <!-- Carousel
+            ================================================== -->
+            <div id="pacmanCarousel" class="carousel slide">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#pacmanCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#pacmanCarousel" data-slide-to="1"></li>
+                <li data-target="#pacmanCarousel" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img src="img/portfolio/pacman3.png" class="img-responsive" style="margin:0 !important;">
+                </div>
+                <div class="item">
+                  <img src="img/portfolio/pacman2.png" class="img-responsive" style="margin:0 !important;">
+                </div>
+                <div class="item">
+                  <img src="img/portfolio/pacman4.png" class="img-responsive" style="margin:0 !important;">
+                </div>
+              </div>
+              <!-- Controls -->
+              <a class="left carousel-control" href="#pacmanCarousel" data-slide="prev">
+                <span class="icon-prev"></span>
+              </a>
+              <a class="right carousel-control" href="#pacmanCarousel" data-slide="next">
+                <span class="icon-next"></span>
+              </a>  
+            </div>
+            <!-- /.carousel -->   
+
+            <p class="portfolio-description"><strong>Welcome to Pacman!</strong><br><br>As a way to gain experience with java swing, I developed my own version of the Pacman videogame. So far it only has 2 levels, I might code more if someday I have spare time... Click the link below to go to the github repository, and eat yourself a few ghosts! </p>
             
             <ul class="list-inline item-details">
               
-              <li>Client:
-                <strong>Start Bootstrap</strong>
+              <li>Framework:
+                <strong>Java Swing</strong>
               </li>
               
               
               <li>Date:
-                <strong>April 2014</strong>
+                <strong>February 2024</strong>
               </li>
               
               
-              <li>Service:
-                <strong>Web Development</strong>
-              </li>
+              <li><li><a href="https://github.com/Lambert-Charles/pacman" target="_blank"><strong>See github repository</strong></a></li></li>
               
             </ul>
             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
@@ -416,27 +602,68 @@
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
           <div class="modal-body">
-            <h2>Project 2</h2>
+            <h2>Pacman videogame</h2>
             <hr class="star-primary">
-            <img src="img/portfolio/cake.png" class="img-responsive img-centered" alt="image-alt">
-            
-            <p>Use this area of the page to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+
+
+            <!-- Carousel
+            ================================================== -->
+            <div id="bankAppCarousel" class="carousel slide">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#bankAppCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#bankAppCarousel" data-slide-to="1"></li>
+                <li data-target="#bankAppCarousel" data-slide-to="2"></li>
+                <li data-target="#bankAppCarousel" data-slide-to="3"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img src="img/portfolio/greenbank1.png" class="img-responsive" style="margin:0 !important;">
+                </div>
+                <div class="item">
+                  <img src="img/portfolio/greenbank2.png" class="img-responsive" style="margin:0 !important;">
+                </div>
+                <div class="item">
+                  <img src="img/portfolio/greenbank4.png" class="img-responsive" style="margin:0 !important;">
+                </div>
+                <div class="item">
+                  <img src="img/portfolio/greenbank3.png" class="img-responsive" style="margin:0 !important;">
+                </div>
+              </div>
+              <!-- Controls -->
+              <a class="left carousel-control" href="#bankAppCarousel" data-slide="prev">
+                <span class="icon-prev"></span>
+              </a>
+              <a class="right carousel-control" href="#bankAppCarousel" data-slide="next">
+                <span class="icon-next"></span>
+              </a>  
+            </div>
+            <!-- /.carousel -->   
+
+            <p class="portfolio-description"><strong>Welcome to Greenbank</strong><br><br>As a way to gain experience with JavaFx and GUIs in general, I developed my own bank application simulation. Some of the cool features included in the app and thing that I learnt along the way:</p>
+              <ul class="ul">
+                <li class="text-align-left">minimum password requirements using <strong>regex</strong></li>
+                <li class="text-align-left"><strong>MD5</strong> self coded hashing algorithm so that the password are safely stored</li>
+                <li class="text-align-left"><strong>Serialization</strong> to save customers information and transactions</li>
+                <li class="text-align-left"><strong>javafx</strong>  panes system, buttons, text fields, password fields, hyperlinks etc</li>
+                <li class="text-align-left">jfoenix <strong>hamburger menu</strong></li>
+              </ul>
+
+              
             
             <ul class="list-inline item-details">
               
-              <li>Client:
-                <strong>Start Bootstrap</strong>
+              <li>Framework:
+                <strong>JavaFX</strong>
               </li>
               
               
               <li>Date:
-                <strong>April 2014</strong>
+                <strong>October 2023</strong>
               </li>
               
               
-              <li>Service:
-                <strong>Web Development</strong>
-              </li>
+              <li><li><a href="https://github.com/Lambert-Charles/bankApp" target="_blank"><strong>See github repository</strong></a></li></li>
               
             </ul>
             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
@@ -461,162 +688,56 @@
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
           <div class="modal-body">
-            <h2>Project 3</h2>
+            <h2>MD5 algorithm</h2>
             <hr class="star-primary">
-            <img src="img/portfolio/circus.png" class="img-responsive img-centered" alt="image-alt">
-            
-            <p>Use this area of the page to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-            
-            <ul class="list-inline item-details">
-              
-              <li>Client:
-                <strong>Start Bootstrap</strong>
-              </li>
-              
-              
-              <li>Date:
-                <strong>April 2014</strong>
-              </li>
-              
-              
-              <li>Service:
-                <strong>Web Development</strong>
-              </li>
-              
-            </ul>
-            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
-              Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 
-<div class="portfolio-modal modal fade" id="portfolioModal-4" tabindex="-1" role="dialog"
-  aria-hidden="true">
-  <div class="modal-content">
-    <div class="close-modal" data-dismiss="modal">
-      <div class="lr">
-        <div class="rl">
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-lg-offset-2">
-          <div class="modal-body">
-            <h2>Project 4</h2>
-            <hr class="star-primary">
-            <img src="img/portfolio/game.png" class="img-responsive img-centered" alt="image-alt">
-            
-            <p>Use this area of the page to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-            
-            <ul class="list-inline item-details">
-              
-              <li>Client:
-                <strong>Start Bootstrap</strong>
-              </li>
-              
-              
-              <li>Date:
-                <strong>April 2014</strong>
-              </li>
-              
-              
-              <li>Service:
-                <strong>Web Development</strong>
-              </li>
-              
-            </ul>
-            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
-              Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 
-<div class="portfolio-modal modal fade" id="portfolioModal-6" tabindex="-1" role="dialog"
-  aria-hidden="true">
-  <div class="modal-content">
-    <div class="close-modal" data-dismiss="modal">
-      <div class="lr">
-        <div class="rl">
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-lg-offset-2">
-          <div class="modal-body">
-            <h2>Project 6</h2>
-            <hr class="star-primary">
-            <img src="img/portfolio/submarine.png" class="img-responsive img-centered" alt="image-alt">
-            
-            <p>Use this area of the page to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-            
-            <ul class="list-inline item-details">
-              
-              <li>Client:
-                <strong>Start Bootstrap</strong>
-              </li>
-              
-              
-              <li>Date:
-                <strong>April 2014</strong>
-              </li>
-              
-              
-              <li>Service:
-                <strong>Web Development</strong>
-              </li>
-              
-            </ul>
-            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
-              Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+            <!-- Carousel
+            ================================================== -->
+            <div id="md5Carousel" class="carousel slide">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#md5Carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#md5Carousel" data-slide-to="1"></li>
+                <li data-target="#md5Carousel" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img src="img/portfolio/md51.png" class="img-responsive" style="margin:0 !important;">
+                </div>
+                <div class="item">
+                  <img src="img/portfolio/md52.png" class="img-responsive" style="margin:0 !important;">
+                </div>
+                <div class="item">
+                  <img src="img/portfolio/md53.png" class="img-responsive" style="margin:0 !important;">
+                </div>
+              </div>
+              <!-- Controls -->
+              <a class="left carousel-control" href="#md5Carousel" data-slide="prev">
+                <span class="icon-prev"></span>
+              </a>
+              <a class="right carousel-control" href="#md5Carousel" data-slide="next">
+                <span class="icon-next"></span>
+              </a>  
+            </div>
+            <!-- /.carousel -->   
 
-<div class="portfolio-modal modal fade" id="portfolioModal-5" tabindex="-1" role="dialog"
-  aria-hidden="true">
-  <div class="modal-content">
-    <div class="close-modal" data-dismiss="modal">
-      <div class="lr">
-        <div class="rl">
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-lg-offset-2">
-          <div class="modal-body">
-            <h2>Project 5</h2>
-            <hr class="star-primary">
-            <img src="img/portfolio/safe.png" class="img-responsive img-centered" alt="image-alt">
-            
-            <p>Use this area of the page to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-            
+            <p class="portfolio-description"><strong>Hash your passwords</strong><br><br>For practice's (and fun's) sake, I wrote my own MD5 hash generator in <strong>java</strong>.
+              The MD5 message-digest algorithm is a widely used hash function producing a 128-bit hash value. It was designed 
+              by Ronald Rivest in 1991 to replace an earlier hash function MD4, and was specified in 1992 as RFC 1321.<a href="https://en.wikipedia.org/wiki/MD5"> More information on MD5.</a> 
+              I built this project with <strong>Maven</strong> and it comes along with <strong>Junit</strong> tests.</p>
+
             <ul class="list-inline item-details">
               
-              <li>Client:
-                <strong>Start Bootstrap</strong>
+              <li>Language:
+                <strong>Java</strong>
               </li>
-              
               
               <li>Date:
-                <strong>April 2014</strong>
+                <strong>August 2023</strong>
               </li>
               
-              
-              <li>Service:
-                <strong>Web Development</strong>
-              </li>
+              <li><li><a href="https://github.com/Lambert-Charles/md5-hash" target="_blank"><strong>See github repository</strong></a></li></li>
               
             </ul>
             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
@@ -629,7 +750,7 @@
 </div>
 
 
-  <!-- jQuery Version 1.11.0 -->
+<!-- jQuery Version 1.11.0 -->
 <script src=" js/jquery-1.11.0.js"></script>
 
 <!-- Bootstrap Core JavaScript -->
@@ -647,7 +768,7 @@
 
 
 <!-- Custom Theme JavaScript -->
-<script src=" js/freelancer.js"></script>
+<script src=" js/myCV.js"></script>
 
 
 
